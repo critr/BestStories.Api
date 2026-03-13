@@ -66,3 +66,4 @@ curl "https://localhost:7256/api/best-stories?n=5"
   - Cache individual story details by ID.
   - Add concurrency limits when fetching many story details at once.
   - Add structured logging (e.g. Serilog) and automated tests (e.g. xUnit) to track latency, error rates, and verify behaviour.
+  - Move hard‑coded values (e.g. cache TTL, request timeout, maximum `n`) into a configuration section (`appsettings.json` or environment variables) so they can be tuned without recompiling.
